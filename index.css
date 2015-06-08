@@ -8,3 +8,11 @@
 body {
     font-family: 'Myriad Pro Regular';
 }
+
+h1 {
+    text-align: right;
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 0.5em;
+}
