@@ -1,0 +1,53 @@
+// out: main.css, sourcemap: false, compress: true
+@import "theme.less";
+
+@Page-Side-Margin: 40px;
+
+body{
+  background-color: white;
+  //font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  //font-weight: 300;
+  font-size: 18px;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+.top-bar{
+  background-color: @color-primary-0;
+  color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+
+  padding: 10px @Page-Side-Margin;
+
+  .site-title{
+    font-size: 40px;
+  }
+}
+
+.body-content{
+  margin: 20px @Page-Side-Margin 0 @Page-Side-Margin;
+
+  h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+    &:first-of-type{
+      margin-top: 0;
+    }
+  }
+
+  p{
+    border-left: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    padding: 5px 10px;
+  }
+}
